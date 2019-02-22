@@ -14,8 +14,6 @@ const bearerValidation = require('./src/libs/bearerValidation');
 const config = require('./config');
 const Package = require('./package');
 
-let test = 1;
-
 const swaggerOptions = {
   jsonPath: '/documentation.json',
   documentationPath: '/documentation',
