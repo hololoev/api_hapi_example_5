@@ -16,11 +16,11 @@ async function validate (request, token) { // а вот тут уже начин
   
   // Херачим запрос в бд, и смотрим есть ли такой токен и валиден ли он
   let dbToken = await accessToken.findOne({ where: {
-      token: token,
-      expires_at: {
-        [ Op.gte ]: new Date()
-      }
+    token: token,
+    expires_at: {
+      [ Op.gte ]: new Date()
     }
+  }
   });
   
   if( !dbToken ) {

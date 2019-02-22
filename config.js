@@ -19,4 +19,4 @@ module.exports = {
     storage: './db/localDB.db',
     operatorsAliases: Sequelize.Op
   }
-}
+};
